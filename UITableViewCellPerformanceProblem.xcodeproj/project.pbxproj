@@ -18,6 +18,11 @@
 		EDE6C3D31760C52B00F1FE68 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDE6C3D21760C52B00F1FE68 /* Default@2x.png */; };
 		EDE6C3D51760C52B00F1FE68 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDE6C3D41760C52B00F1FE68 /* Default-568h@2x.png */; };
 		EDE6C3D81760C52B00F1FE68 /* UITableViewCellPerformanceProblem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDE6C3D61760C52B00F1FE68 /* UITableViewCellPerformanceProblem.xcdatamodeld */; };
+		EDE6C3DF1760C54100F1FE68 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE6C3DE1760C54100F1FE68 /* Storyboard.storyboard */; };
+		EDE6C3E31760C5F600F1FE68 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE6C3E21760C5F600F1FE68 /* TableViewController.m */; };
+		EDE6C3E61760C60100F1FE68 /* NewRowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE6C3E51760C60100F1FE68 /* NewRowViewController.m */; };
+		EDE6C3E91760C76400F1FE68 /* Row.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE6C3E81760C76400F1FE68 /* Row.m */; };
+		EDE6C3EC1760CBE100F1FE68 /* RowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE6C3EB1760CBE100F1FE68 /* RowCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,15 @@
 		EDE6C3D21760C52B00F1FE68 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		EDE6C3D41760C52B00F1FE68 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EDE6C3D71760C52B00F1FE68 /* UITableViewCellPerformanceProblem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UITableViewCellPerformanceProblem.xcdatamodel; sourceTree = "<group>"; };
+		EDE6C3DE1760C54100F1FE68 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		EDE6C3E11760C5F600F1FE68 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		EDE6C3E21760C5F600F1FE68 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		EDE6C3E41760C60100F1FE68 /* NewRowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewRowViewController.h; sourceTree = "<group>"; };
+		EDE6C3E51760C60100F1FE68 /* NewRowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewRowViewController.m; sourceTree = "<group>"; };
+		EDE6C3E71760C76400F1FE68 /* Row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Row.h; sourceTree = "<group>"; };
+		EDE6C3E81760C76400F1FE68 /* Row.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Row.m; sourceTree = "<group>"; };
+		EDE6C3EA1760CBE100F1FE68 /* RowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowCell.h; sourceTree = "<group>"; };
+		EDE6C3EB1760CBE100F1FE68 /* RowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +98,7 @@
 		EDE6C3C41760C52B00F1FE68 /* UITableViewCellPerformanceProblem */ = {
 			isa = PBXGroup;
 			children = (
+				EDE6C3E01760C5DF00F1FE68 /* Classes */,
 				EDE6C3CD1760C52B00F1FE68 /* AppDelegate.h */,
 				EDE6C3CE1760C52B00F1FE68 /* AppDelegate.m */,
 				EDE6C3D61760C52B00F1FE68 /* UITableViewCellPerformanceProblem.xcdatamodeld */,
@@ -102,8 +117,24 @@
 				EDE6C3D01760C52B00F1FE68 /* Default.png */,
 				EDE6C3D21760C52B00F1FE68 /* Default@2x.png */,
 				EDE6C3D41760C52B00F1FE68 /* Default-568h@2x.png */,
+				EDE6C3DE1760C54100F1FE68 /* Storyboard.storyboard */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDE6C3E01760C5DF00F1FE68 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EDE6C3E71760C76400F1FE68 /* Row.h */,
+				EDE6C3E81760C76400F1FE68 /* Row.m */,
+				EDE6C3E11760C5F600F1FE68 /* TableViewController.h */,
+				EDE6C3E21760C5F600F1FE68 /* TableViewController.m */,
+				EDE6C3E41760C60100F1FE68 /* NewRowViewController.h */,
+				EDE6C3E51760C60100F1FE68 /* NewRowViewController.m */,
+				EDE6C3EA1760CBE100F1FE68 /* RowCell.h */,
+				EDE6C3EB1760CBE100F1FE68 /* RowCell.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +192,7 @@
 				EDE6C3D11760C52B00F1FE68 /* Default.png in Resources */,
 				EDE6C3D31760C52B00F1FE68 /* Default@2x.png in Resources */,
 				EDE6C3D51760C52B00F1FE68 /* Default-568h@2x.png in Resources */,
+				EDE6C3DF1760C54100F1FE68 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +206,10 @@
 				EDE6C3CB1760C52B00F1FE68 /* main.m in Sources */,
 				EDE6C3CF1760C52B00F1FE68 /* AppDelegate.m in Sources */,
 				EDE6C3D81760C52B00F1FE68 /* UITableViewCellPerformanceProblem.xcdatamodeld in Sources */,
+				EDE6C3E31760C5F600F1FE68 /* TableViewController.m in Sources */,
+				EDE6C3E61760C60100F1FE68 /* NewRowViewController.m in Sources */,
+				EDE6C3E91760C76400F1FE68 /* Row.m in Sources */,
+				EDE6C3EC1760CBE100F1FE68 /* RowCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
